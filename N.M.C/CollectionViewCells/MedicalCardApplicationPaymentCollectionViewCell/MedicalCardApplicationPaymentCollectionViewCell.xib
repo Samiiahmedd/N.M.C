@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MedicalCardApplicationPaymentCollectionViewCell" id="gTV-IL-0wX" customClass="MedicalCardApplicationPaymentCollectionViewCell" customModule="N_M_C" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="264" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="264" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yr-DW-0c1">
+                        <rect key="frame" x="0.0" y="0.0" width="264" height="85"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t0p-7k-JBj">
+                                <rect key="frame" x="100" y="5" width="64" height="75"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-8l-PbY">
+                                        <rect key="frame" x="7" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-vF-3db">
+                                        <rect key="frame" x="12.333333333333325" y="50" width="39.666666666666657" height="25"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                        <color key="textColor" name="Colorبب"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="Color 4"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t0p-7k-JBj" secondAttribute="trailing" constant="100" id="Cxv-aW-jxy"/>
+                            <constraint firstItem="t0p-7k-JBj" firstAttribute="top" secondItem="6yr-DW-0c1" secondAttribute="top" constant="5" id="F2Y-zJ-RQ7"/>
+                            <constraint firstAttribute="bottom" secondItem="t0p-7k-JBj" secondAttribute="bottom" constant="5" id="M6W-FL-xc9"/>
+                            <constraint firstItem="t0p-7k-JBj" firstAttribute="leading" secondItem="6yr-DW-0c1" secondAttribute="leading" constant="100" id="rye-dt-XSb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="6yr-DW-0c1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1eY-wq-gJ4"/>
+                <constraint firstAttribute="trailing" secondItem="6yr-DW-0c1" secondAttribute="trailing" id="Z3c-kk-zBp"/>
+                <constraint firstAttribute="bottom" secondItem="6yr-DW-0c1" secondAttribute="bottom" id="edo-vq-cGd"/>
+                <constraint firstItem="6yr-DW-0c1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="me5-9Z-iL8"/>
+            </constraints>
+            <size key="customSize" width="264" height="85"/>
+            <connections>
+                <outlet property="Logo" destination="2iB-8l-PbY" id="iab-fM-w0X"/>
+                <outlet property="title" destination="V8Z-vF-3db" id="fSn-DF-fkg"/>
+            </connections>
+            <point key="canvasLocation" x="132.82442748091603" y="20.774647887323944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Color 4">
+            <color red="0.56862745098039214" green="0.52156862745098043" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Colorبب">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

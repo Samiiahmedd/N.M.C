@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="medicalNetworkDetailsVC" customModule="N_M_C" customModuleProvider="target">
+            <connections>
+                <outlet property="GradientView" destination="dB7-a8-V3S" id="LAm-c6-ldM"/>
+                <outlet property="detailedLocation" destination="kis-24-hou" id="IfK-xZ-yG0"/>
+                <outlet property="disscount" destination="I3V-Ob-JXc" id="IVh-e7-DD8"/>
+                <outlet property="location" destination="kMq-2f-ABy" id="Oo8-08-aON"/>
+                <outlet property="medicalNetworkImage" destination="hAx-ct-lEe" id="Hd3-wH-l0W"/>
+                <outlet property="medicalNetworkLabel" destination="M9c-pr-WTZ" id="QbK-zh-5Kg"/>
+                <outlet property="number" destination="yju-ub-bKS" id="KhM-1U-Gzp"/>
+                <outlet property="specialization" destination="waX-sm-Wga" id="YPh-cf-XEc"/>
+                <outlet property="time" destination="KvX-yg-QpC" id="qEW-gb-2mH"/>
+                <outlet property="topTitle" destination="NkT-yu-Vki" id="dEB-vp-OI0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-gL-Oq6">
+                    <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHg-E9-M7I">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="696"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الشبكة الطبية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9c-pr-WTZ">
+                                    <rect key="frame" x="20" y="3" width="150.66666666666666" height="45"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                                    <color key="textColor" name="Color main"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hAx-ct-lEe">
+                                    <rect key="frame" x="20" y="58" width="335" height="250"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="hjv-KC-NDW"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NkT-yu-Vki">
+                                    <rect key="frame" x="20" y="323" width="335" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                                    <color key="textColor" name="Color 4"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-a8-V3S" customClass="GradientView" customModule="N_M_C" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="331" width="335" height="265"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="EYs-vg-iPL">
+                                            <rect key="frame" x="5" y="10" width="325" height="245"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1Qm-Lp-ben">
+                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_baseline-home" translatesAutoresizingMaskIntoConstraints="NO" id="DXr-FW-d5w">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="50"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMq-2f-ABy">
+                                                            <rect key="frame" x="28" y="0.0" width="297" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <color key="textColor" red="0.95436907569999996" green="0.95436907569999996" blue="0.95436907569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-sx-ThD">
+                                                    <rect key="frame" x="0.0" y="57" width="325" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solar_map-point-wave-line-duotone" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-tT-xe1">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kis-24-hou">
+                                                            <rect key="frame" x="28" y="0.0" width="297" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <color key="textColor" red="0.95436907569999996" green="0.95436907569999996" blue="0.95436907569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bpS-cE-0TT">
+                                                    <rect key="frame" x="0.0" y="84" width="325" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solar_star-bold" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-qM-vIk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="50"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waX-sm-Wga">
+                                                            <rect key="frame" x="28" y="0.0" width="297" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <color key="textColor" red="0.95436907569999996" green="0.95436907569999996" blue="0.95436907569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BqK-Sy-sAy">
+                                                    <rect key="frame" x="0.0" y="141" width="325" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nimbus_telephone" translatesAutoresizingMaskIntoConstraints="NO" id="iYD-P9-KCV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="50"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yju-ub-bKS">
+                                                            <rect key="frame" x="28" y="0.0" width="297" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <color key="textColor" red="0.95436907569999996" green="0.95436907569999996" blue="0.95436907569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-em-5Of">
+                                                    <rect key="frame" x="0.0" y="198" width="325" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solar_sale-bold" translatesAutoresizingMaskIntoConstraints="NO" id="dGy-9S-eOd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3V-Ob-JXc">
+                                                            <rect key="frame" x="28" y="0.0" width="297" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <color key="textColor" red="0.95436907569999996" green="0.95436907569999996" blue="0.95436907569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-td-MFN">
+                                                    <rect key="frame" x="0.0" y="225" width="325" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ri_time-line" translatesAutoresizingMaskIntoConstraints="NO" id="XYt-4z-l0E">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvX-yg-QpC">
+                                                            <rect key="frame" x="28" y="0.0" width="297" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <color key="textColor" red="0.95436907569999996" green="0.95436907569999996" blue="0.95436907569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="EYs-vg-iPL" secondAttribute="bottom" constant="10" id="1dX-1B-H7n"/>
+                                        <constraint firstItem="EYs-vg-iPL" firstAttribute="leading" secondItem="dB7-a8-V3S" secondAttribute="leading" constant="5" id="1g3-af-lMY"/>
+                                        <constraint firstAttribute="trailing" secondItem="EYs-vg-iPL" secondAttribute="trailing" constant="5" id="5Vy-AC-NYL"/>
+                                        <constraint firstItem="EYs-vg-iPL" firstAttribute="top" secondItem="dB7-a8-V3S" secondAttribute="top" constant="10" id="yGD-7q-Hzp"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="hAx-ct-lEe" firstAttribute="top" secondItem="M9c-pr-WTZ" secondAttribute="bottom" constant="10" id="9kh-5z-vqQ"/>
+                                <constraint firstItem="M9c-pr-WTZ" firstAttribute="leading" secondItem="lHg-E9-M7I" secondAttribute="leading" constant="20" id="9u2-Tt-0lZ"/>
+                                <constraint firstItem="dB7-a8-V3S" firstAttribute="top" secondItem="NkT-yu-Vki" secondAttribute="bottom" constant="8" id="I6D-35-qMT"/>
+                                <constraint firstItem="dB7-a8-V3S" firstAttribute="leading" secondItem="lHg-E9-M7I" secondAttribute="leading" constant="20" id="PWu-2R-hrk"/>
+                                <constraint firstAttribute="trailing" secondItem="NkT-yu-Vki" secondAttribute="trailing" constant="20" id="SAY-3B-M6k"/>
+                                <constraint firstItem="M9c-pr-WTZ" firstAttribute="top" secondItem="lHg-E9-M7I" secondAttribute="top" constant="3" id="Vot-vg-vlp"/>
+                                <constraint firstAttribute="trailing" secondItem="dB7-a8-V3S" secondAttribute="trailing" constant="20" id="ixV-96-qwE"/>
+                                <constraint firstItem="NkT-yu-Vki" firstAttribute="leading" secondItem="lHg-E9-M7I" secondAttribute="leading" constant="20" id="jLY-We-aaX"/>
+                                <constraint firstItem="hAx-ct-lEe" firstAttribute="leading" secondItem="lHg-E9-M7I" secondAttribute="leading" constant="20" id="mh2-Yb-N4j"/>
+                                <constraint firstAttribute="bottom" secondItem="dB7-a8-V3S" secondAttribute="bottom" constant="100" id="njA-76-ngp"/>
+                                <constraint firstAttribute="trailing" secondItem="hAx-ct-lEe" secondAttribute="trailing" constant="20" id="ohf-ma-00B"/>
+                                <constraint firstItem="NkT-yu-Vki" firstAttribute="top" secondItem="hAx-ct-lEe" secondAttribute="bottom" constant="15" id="yQk-L6-vom"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lHg-E9-M7I" secondAttribute="trailing" id="3Lc-NC-wnm"/>
+                        <constraint firstItem="lHg-E9-M7I" firstAttribute="top" secondItem="mL3-gL-Oq6" secondAttribute="top" id="HFr-C7-XYo"/>
+                        <constraint firstAttribute="bottom" secondItem="lHg-E9-M7I" secondAttribute="bottom" id="HTN-xH-nKC"/>
+                        <constraint firstItem="lHg-E9-M7I" firstAttribute="leading" secondItem="mL3-gL-Oq6" secondAttribute="leading" id="Rqh-q4-YBw"/>
+                        <constraint firstItem="lHg-E9-M7I" firstAttribute="width" secondItem="mL3-gL-Oq6" secondAttribute="width" id="oIL-DO-rHv"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="00K-p7-wc0"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="jRw-aM-pyN"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mL3-gL-Oq6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="47t-lf-kTC"/>
+                <constraint firstItem="mL3-gL-Oq6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="48b-wS-TQy"/>
+                <constraint firstItem="mL3-gL-Oq6" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="MLY-9C-whS"/>
+                <constraint firstItem="mL3-gL-Oq6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Y8Y-FF-cOU"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11.083743842364532"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_baseline-home" width="20" height="20"/>
+        <image name="nimbus_telephone" width="20" height="20"/>
+        <image name="ri_time-line" width="20" height="20"/>
+        <image name="solar_map-point-wave-line-duotone" width="20" height="20"/>
+        <image name="solar_sale-bold" width="20" height="20"/>
+        <image name="solar_star-bold" width="20" height="20"/>
+        <namedColor name="Color 4">
+            <color red="0.56862745098039214" green="0.52156862745098043" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color main">
+            <color red="0.0" green="0.69019607843137254" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
